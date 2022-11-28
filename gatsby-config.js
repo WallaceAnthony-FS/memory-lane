@@ -32,7 +32,7 @@ try {
 
 if (
     process.env.NODE_ENV === `production` &&
-    config.siteUrl === `http://localhost:8000` &&
+    config.siteUrl === `https://jazzy-babka-e1c83e.netlify.app/` &&
     !process.env.SITEURL
 ) {
     throw new Error(
