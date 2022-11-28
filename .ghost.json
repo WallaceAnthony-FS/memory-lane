@@ -4,7 +4,7 @@
     "contentApiKey": "9cc5c67c358edfdd81455149d0"
   },
   "production": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://assignment-memory-lane.herokuapp.com",
+    "contentApiKey": "27ab3a122b2d4aa839de41140d"
   }
 }
