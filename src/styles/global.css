@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #A4B494;
+  --text-color-primary: #3B5249;
+  --text-color-header: #34252F;
+  --accent-color: #519872;
+  --color-white: #BEC5AD;
+}
+
+html {
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--text-color-header)
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+a {
+  color: var(--text-color-primary);
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  background-color: var(--text-color-header);
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: var(--accent-color);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover, a:focus {
+  background-color: var(--text-color-primary);
+  color: var(--color-white)
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+}
